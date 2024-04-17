@@ -1,37 +1,54 @@
 body{
-    margin: 0px; /*body에 margin 기본 8px*/
-    background-image: url("imges/detailed-hand-painted-pink-watercolour-background_1048-17039.avif");
-    background-repeat: no-repeat;
+    background-image: url("imges/공주배경.jpeg");
+    background-repeat: repeat;
     background-size: cover;
-
+    margin: 0 auto; /*body에 margin 기본 8px*/
+    width: 800px;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
 }
-.container{
-    background-color: rgb(255, 255, 255);
+#main-body
+{
+    width: 800px;
+    padding: 30px 40px;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.149);
+    background-color: rgba(255, 255, 255, 0.812);
     min-height: 100vh; /*view height 보는 화면의 높이만큼*/
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 3px solid rgb(255, 255, 255);
 }
 .task-area{
-    border: 1px solid lightblue;
+    border: 1px solid lightpink;
+    border-radius: 10px;
+
 }
 .task-tabs{
     display: flex; /*가로 정렬 (부모에게 적용해야함)*/
-    border-bottom: 1px solid lightblue;
+    border-bottom: 1px solid lightpink;
     position: relative; 
     /*언더라인의 부모인 task-tabs에  position: relative;이렇게 줘야 
     언더라인의 position:absolute의 기준점이  task-tabs이 됨 */
-
+    border-radius: 10px;
+    background-color: rgb(255, 248, 252);
 }
 .task-tabs div{
     padding: 1em;
+    color: rgb(107, 15, 67);
 }
 #under-line{
     height: 4px;
+    color: rgb(83, 0, 14);
     background-color: pink;
     position:absolute;
-    width: 80px;
-    left:0px;
+    width: 45px;
+    left:7px;
     top: 52px;
     padding: 0px;
+    border-radius: 20px;
 }
 .task{
     display: flex;
@@ -40,8 +57,50 @@ body{
 }
 .task-done{
     text-decoration: line-through; /*텍스트에 밑줄*/
+    color: rgb(76, 0, 51);
 }
 
 .task-tabs div{
     cursor:pointer;
 }
+
+input{
+    border-radius: 10px;
+    border-color: pink;
+    height: 35px;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(255, 251, 251);
+}
+header{
+    font-size: 30px;
+}
+#task-board{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.897);
+    
+}
+#header-head{
+    color: rgb(57, 10, 38);
+}
+.input-area{
+    display: flex;
+    position: relative; 
+    align-items: center;
+}
+
+.click-button{
+    display: flex;
+    position: relative; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.click-button div{
+    padding: 0 5px 0 5px;
+}
+
+button {
+    border: none;
+  }
