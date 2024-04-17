@@ -70,8 +70,6 @@ function addTask(){
     addButton.disabled=true;
 }
 
-console.log(addButton);
-
 
 function render(){ //그림 이걸로 처리
     let list=[];
